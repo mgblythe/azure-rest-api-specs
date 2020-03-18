@@ -1520,6 +1520,11 @@
     "PrivateEndpointConnection": {
       "description": "An object that represents a private endpoint connection for a container registry.",
       "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/Resource"
+        }
+      ],
       "properties": {
         "type": {
           "description": "The resource type is private endpoint connection.",
